@@ -1,5 +1,5 @@
 <template>
-  <div class="app font-mono">
+  <div class="app">
     <Header></Header>
     <Greeting></Greeting>
     <KnowledgeVue></KnowledgeVue>
@@ -19,11 +19,25 @@ export default {
     KnowledgeVue,
     Projects,
     Header
-  }
+  },
 }
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, #3ea626);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: linear-gradient(transparent, #3ea626);
+    border-radius: 6px;
+}
+::-webkit-scrollbar {
+    width: 12px;
+    background: #09090A;
+}
 body{
   background-color: #18181b;
   background-image: url('./assets/overlay_stars.svg');

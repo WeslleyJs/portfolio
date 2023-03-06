@@ -1,7 +1,7 @@
 <template>
       <div id="projects" class=" mb-5 mt-10 max-w-md mx-auto bg-black rounded-xl shadow-xl overflow-hidden md:max-w-2xl">
         <div class="bg">
-            <h1 class="mt-2 md:flex justify-center tracking-wide text-sm text-white font-semibold">Some Projects</h1>
+            <h1 class="title mt-2 md:flex justify-center tracking-wide text-sm text-white font-semibold">Some Projects</h1>
         </div>
         <div class="test mt-2 md:flex md:justify-around  items-center mb-8">
             <div class="md:shrink-0 bg-projects">
@@ -27,6 +27,19 @@ export default {
 </script>
 
 <style scoped>
+@media (min-width: 768px) {
+    .title {
+        text-align: center;
+    }
+}
+@media (max-width: 560px) {
+    .title {
+        text-align: center;
+    }
+    .bg{
+        background-position: left;
+    }
+}
 .bg{
   background-image: url('../assets/bg1.svg');
   background-repeat: no-repeat;
