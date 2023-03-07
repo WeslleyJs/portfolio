@@ -20,6 +20,11 @@ export default {
     Projects,
     Header
   },
+  data(){
+    return{
+    }
+  },
+
 }
 </script>
 
