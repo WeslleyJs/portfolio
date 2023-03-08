@@ -65,6 +65,8 @@ export default {
   background-repeat: no-repeat;
   background-position:center;
   padding: 50px;
+  /* filter:contrast(150%)
+            drop-shadow(100px 100px 200px #FFF); */
 }
     .bg-projects{
         background-color: rgba(113, 110, 110, 0.1);

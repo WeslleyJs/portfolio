@@ -11,7 +11,7 @@ const data = [{
     pt:{
         about:"Sobre",
         technology: "Tecnologias",
-        projects: "Projects",
+        projects: "Projetos",
         who: "Quem sou eu?",
         hi: "Olá a todos, eu sou Weslley Vieira",
         resume: "Brasileiro, formado em Análise e Desenvolvimento de Sistemas, Desenvolvedor de Software com foco em desenvolvimento WEB",
