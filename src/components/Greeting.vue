@@ -51,7 +51,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .iam {
-  margin-left: -20px;
+  margin-left: -25px;
 }
 
 .bg {

@@ -2,8 +2,8 @@
     <div id="more" class=" mb-5 mt-10 max-w-md mx-auto bg-black rounded-xl shadow-xl overflow-hidden md:max-w-2xl">
         <div class="md:flex justify-center">
             <button @click="show()" class="bg md:flex justify-center">
-                <h1 class="iam mt-2 md:flex justify-center tracking-wide text-sm text-white font-semibold">{{ msg.technology }} {{
-                    showMore ? '-' : '+' }}</h1>
+                <h1 class="mt-1 mb-1 uppercase tracking-wide text-sm text-white font-semibold">{{ msg.technology }} {{
+                    showMore ? '-'  : '+' }}</h1>
             </button>
         </div>
         <!-- <button class="show" @click="show()">
@@ -42,6 +42,7 @@ import img04 from '../assets/know/otters/tailwindcss-icon.svg'
 import img05 from '../assets/know/otters/w3_css-icon.svg'
 import img06 from '../assets/know/otters/expressjs-ar21.svg'
 import img07 from '../assets/know/otters/getbootstrap-icon.svg'
+
 export default {
     name: 'KnowLedge',
     data() {
@@ -56,7 +57,7 @@ export default {
                 { img: img05 },
                 { img: img06 },
                 { img: img07 },
-            ]
+            ],
         }
     },
     methods: {

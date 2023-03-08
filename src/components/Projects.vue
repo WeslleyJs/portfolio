@@ -1,7 +1,7 @@
 <template>
       <div id="projects" class=" mb-5 mt-10 max-w-md mx-auto bg-black rounded-xl shadow-xl overflow-hidden md:max-w-2xl">
         <div class="bg">
-            <h1 class="title mt-2 md:flex justify-center tracking-wide text-sm text-white font-semibold">{{ msg.projects }}</h1>
+            <h1 class="title  uppercase tracking-wide text-sm text-white font-semibold">{{ msg.projects }}</h1>
         </div>
         <div class="test mt-2 md:flex md:justify-around items-center mb-8">
             <div class="md:shrink-0 bg-projects click">
@@ -72,15 +72,16 @@ export default {
         background-color: rgba(113, 110, 110, 0.1);
         padding: 10px;
         border-radius: 8px  ;
-}
-.click{
-    transition: .5s;
-    transform:translateY(0px);
-}
-.click:hover{
-    animation: float 1s ease-in-out ;
-    transition: .5s;
-    transform:translateY(-10px);
+    }
+    .click{
+        transition: .5s;
+        transform:translateY(0px);
+    }
+    .click:hover{
+        animation: float 1s ease-in-out ;
+        transition: .5s;
+        transform:translateY(-10px);
+        background-color: rgba(49, 235, 7, 0.263);
 }
 @keyframes float {
   0% {
