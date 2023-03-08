@@ -1,24 +1,16 @@
 <template>
   <div class="app">
-    <Header></Header>
-    <Greeting></Greeting>
-    <KnowledgeVue></KnowledgeVue>
-    <Projects></Projects>
+    <Homeeg></Homeeg>
+    <router-view to="/eg"></router-view>
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue';
-import Greeting from './components/Greeting.vue';
-import KnowledgeVue from './components/Knowledge.vue';
-import Projects from './components/Projects.vue';
+import Homeeg from './pages/Homeeg.vue'
 export default {
   name: 'App',
   components: {
-    Greeting,
-    KnowledgeVue,
-    Projects,
-    Header
+    Homeeg,
   },
   data(){
     return{

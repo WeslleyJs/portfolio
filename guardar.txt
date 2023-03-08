@@ -1,0 +1,19 @@
+        Murl() {
+            const local = window.location.pathname;
+            if (local === '/eg') {
+                this.greetings.msg = 'Hi everyone, I am Weslley Vieira.'
+                this.greetings.msg02 = 'Brazilian, graduated in Systems Analysis and Development, Software Developer with a focus on WEB development'
+                return
+            }
+            if (local === '/pt') {
+                this.greetings.msg = 'Olá a todos, eu sou Weslley Vieira.',
+                    this.greetings.msg02 = 'Brasileiro, formado em Análise e Desenvolvimento de Sistemas, Desenvolvedor de Software com foco em desenvolvimento WEB'
+                return
+            }
+        }
+    },
+    mounted() {
+        this.greetings.msg = 'Olá a todos, eu sou Weslley Vieira.',
+        this.greetings.msg02 = 'Brasileiro, formado em Análise e Desenvolvimento de Sistemas, Desenvolvedor de Software com foco em desenvolvimento WEB'
+
+    }

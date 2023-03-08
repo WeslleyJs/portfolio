@@ -11,9 +11,9 @@
       </div>
     </div>
     <div :class="isOpen ? 'block': 'hidden'" class="myMenu hd px-2 pt-2 pb-4 sm:flex text-white">
-      <a href="#about" class="lnk block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0">About </a>
-      <a href="#more" class="lnk mt-2 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0">Technology </a>
-      <a href="#projects" class="lnk mt-2 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0">Projects</a>
+      <a href="#about" class="lnk block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0">{{ msg.about }} </a>
+      <a href="#more" class="lnk mt-2 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0">{{ msg.technology }} </a>
+      <a href="#projects" class="lnk mt-2 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0">{{ msg.projects }}</a>
     </div>
   </header>
 </template>
@@ -26,6 +26,12 @@ export default {
       isOpen: false,
     }
   },
+  props:{
+    msg:{
+      type: Object,
+      default: () => ({})
+    }
+  }
 
 }
 </script>

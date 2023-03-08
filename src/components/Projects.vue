@@ -1,7 +1,7 @@
 <template>
       <div id="projects" class=" mb-5 mt-10 max-w-md mx-auto bg-black rounded-xl shadow-xl overflow-hidden md:max-w-2xl">
         <div class="bg">
-            <h1 class="title mt-2 md:flex justify-center tracking-wide text-sm text-white font-semibold">Projects</h1>
+            <h1 class="title mt-2 md:flex justify-center tracking-wide text-sm text-white font-semibold">{{ msg.projects }}</h1>
         </div>
         <div class="test mt-2 md:flex md:justify-around items-center mb-8">
             <div class="md:shrink-0 bg-projects click">
@@ -15,15 +15,13 @@
                 <h6 class="block text-white text-center">Sales Rocket</h6>
             </div>
         </div>
-        <div class="bg-projects md:flex justify-around">
-            <h4 class="text-white md:flex justify">
-                For more Project access my GitHub 
-                <span>
-                    <a href="https://github.com/TLT-sptb">
-                        <img style="width: 40px;" src="../assets/GitHub-Icon-White-Dark-Background-Logo.wine.svg" alt="">
+        <div class="bg-projects md:flex justify-center">
+            <img class="" style="width: 40px;" src="../assets/GitHub-Icon-White-Dark-Background-Logo.wine.svg" alt="">
+            <h4 class="text-white md:inline sm:flex items-center justify">
+                    <a href="https://github.com/TLT-sptb" class="font-bold justify center">
+                        For more Project access my GitHub
                     </a>
-                </span>
-            </h4>
+                </h4>
         </div>
         
     </div>
@@ -32,6 +30,12 @@
 <script>
 export default {
     name:'MyProject',
+    props:{
+        msg:{
+            type: Object,
+            default: () => ({})
+        }
+    }
 }
 </script>
 

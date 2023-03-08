@@ -2,7 +2,7 @@
     <div id="more" class=" mb-5 mt-10 max-w-md mx-auto bg-black rounded-xl shadow-xl overflow-hidden md:max-w-2xl">
         <div class="md:flex justify-center">
             <button @click="show()" class="bg md:flex justify-center">
-                <h1 class="iam mt-2 md:flex justify-center tracking-wide text-sm text-white font-semibold">Knowledge {{
+                <h1 class="iam mt-2 md:flex justify-center tracking-wide text-sm text-white font-semibold">{{ msg.technology }} {{
                     showMore ? '-' : '+' }}</h1>
             </button>
         </div>
@@ -63,6 +63,12 @@ export default {
         show() {
             console.log(this.img2);
             this.showMore = !this.showMore;
+        }
+    },
+    props: {
+        msg: {
+            type: Object,
+            default: () => ({})
         }
     }
 }
