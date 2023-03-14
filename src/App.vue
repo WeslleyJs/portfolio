@@ -39,4 +39,7 @@ body{
   background-color: #18181b;
   background-image: url('./assets/overlay_stars.svg');
 }
+html {
+  scroll-behavior: smooth;
+}
 </style>
