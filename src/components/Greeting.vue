@@ -74,10 +74,9 @@ export default {
 .linkedin{
   filter: brightness(150%);
   width: 40px;
-  transform:translateY(0px);
 }
-.linkedin:hover{
-  	scale:1.5;
-    transition: 1s;
+.linkedin:hover {
+  scale: 1.5;
+  transition: 1s;
 }
 </style>
