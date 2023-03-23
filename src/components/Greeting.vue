@@ -74,6 +74,7 @@ export default {
 .linkedin{
   filter: brightness(150%);
   width: 40px;
+  transition: 1s;
 }
 .linkedin:hover {
   scale: 1.5;
